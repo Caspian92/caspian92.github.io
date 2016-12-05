@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Locus Advertising</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script defer src="js/jqflex.js"></script>
+    <script type="text/javascript">
+        $(window).load(function(){
+            $('.slider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!--[if IE]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <div class="logotype">
+        <span class="name">locus</span> advertising
+    </div>
+    <div class="top-menu clearfix">
+        <ul class="navigation">
+            <li class="nav-element"><a href="index.html">Home</a></li>
+            <li class="nav-element"><a href="#About">About</a></li>
+            <li class="nav-element"><a href="#Portfolio">Portfolio</a></li>
+            <li class="nav-element"><a href="#News">News</a></li>
+            <li class="nav-element"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search">
+            <form>
+                <input type="text" class="searc-text" name="query" placeholder="">
+                <input type="submit" class="sendsubmit" name="send">
+            </form>
+        </div>
+    </div>
+
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/kitchen_adventurer_cheesecake_brownie.jpg" />
+            </li>
+            <li>
+                <img src="img/kitchen_adventurer_lemon.jpg" />
+            </li>
+            <li>
+                <img src="img/kitchen_adventurer_donut.jpg" />
+            </li>
+            <li>
+                <img src="img/kitchen_adventurer_caramel.jpg" />
+            </li>
+        </ul>
+    </div>
+
+    <div class="services">
+        <ul class="services-list clearfix">
+            <li>
+                <div class="avatar"><img src="img/sutaration.png"></div>
+                <div class="title">Web Design</div>
+                <div class="content">Lorem ipsum dolor sit martamet, consectetur adipisicing elit, sed do.</div>
+            </li>
+            <li>
+                <div class="avatar"><img src="img/photo.png"></div>
+                <div class="title">Photography</div>
+                <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</div>
+            </li>
+            <li>
+                <div class="avatar"><img src="img/curves.png"></div>
+                <div class="title">Video</div>
+                <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</div>
+            </li>
+            <li>
+                <div class="avatar"><img src="img/basılı.png"></div>
+                <div class="title">Graphic Design</div>
+                <div class="content">Lorem ipsum dolor sit martamet, consectetur adipisicing elit, sed do.</div>
+            </li>
+            <li>
+                <div class="avatar"><img src="img/e-ticaret1.png"></div>
+                <div class="title">E-Commerce</div>
+                <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</div>
+            </li>
+            <li>
+                <div class="avatar"><img src="img/programming.png"></div>
+                <div class="title">Programming</div>
+                <div class="content">Lorem ipsum dolor sit amet, consectetur omty adipisicing elitry.</div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

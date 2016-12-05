@@ -1,0 +1,360 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("../img/background.jpg");
+    font-family: "TitilliumMaps26L-250wt", sans-serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/* Блок header */
+.wrapper {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.logotype {
+    text-transform: uppercase;
+    font-size: 27px;
+    margin: 40px 0 15px;
+}
+.logotype .name {
+    font-family: "TitilliumMaps26L-750wt", sans-serif;
+}
+
+.top-menu {
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.44);
+    background: -moz-linear-gradient(top, #ffffff 0%, #c9c9c9 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#c9c9c9 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#c9c9c9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c9c9c9',GradientType=0 );
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#c9c9c9')"; /* IE8 */
+    height: 50px;
+}
+
+.navigation {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.navigation li {
+    float: left;
+    border-right: 1px solid #a7a7a7;
+}
+.navigation li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 17px 0;
+    min-width: 110px;
+    text-align: center;
+}
+
+.navigation li a:hover {
+    background: -moz-linear-gradient(top, #c9c9c9 0%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #c9c9c9 0%,#ffffff 100%);
+    background: linear-gradient(to bottom, #c9c9c9 0%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#ffffff',GradientType=0 );
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#c9c9c9', endColorstr='#ffffff')";
+}
+.navigation li:nth-last-child(1) {
+    border: none;
+}
+
+.search {
+    float: right;
+    margin: 13px 20px 0 0;
+    position: relative;
+}
+
+.search input[type="text"] {
+    width: 195px;
+    height: 20px;
+    background: #bdbdbd;
+    box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.44),
+    inset 1px 1px 2px 0px rgba(0, 0, 0, 0.6);
+    border: none;
+}
+.sendsubmit {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    top: 3px;
+    right: 4px;
+    border: 0;
+    background: transparent url('../img/search-icon.png') no-repeat center top;
+    text-indent: -1000em;
+    cursor: pointer;
+}
+/* Блок main */
+/* Slider */
+#slider {margin: 0 auto}
+
+
+#top  { text-align: center; }
+#top .top-inner  { max-width: 658px; width: auto; }
+#top img  { float: none; display: inline; margin-top: 12px; }
+#container {padding: 10px 40px 10px;}
+#main {overflow: hidden;}
+
+/* Browser Resets */
+.flex-container a:active,
+.slider a:active,
+.flex-container a:focus,
+.slider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.slider {margin: 0; padding: 0;}
+.slider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.slider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.slider {margin: 30px 0 60px; background: #fff; border: 20px solid #fff; position: relative; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.55); -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.55); -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.55); -o-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.55); zoom: 1;}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease; height: 310px;}
+.loading .flex-viewport {max-height: 300px;}
+.slider .slides {zoom: 1;}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {width: 31px; height: 36px; margin: -20px 0 0; display: block; background: url(../img/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: 0px; }
+.flex-direction-nav .flex-prev {left: 0px;}
+.slider:hover .flex-next {opacity: 1; right: 0px;}
+.slider:hover .flex-prev {opacity: 1; left: 0px;}
+.slider:hover .flex-next:hover, .slider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+}
+.pagination-bg { background: #fff; display: inline-block; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.55); -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.55); }
+.flex-control-nav li {display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 20px; height: 23px; display: block; cursor: pointer; text-indent: -9999px; background: url("../img/nav-pag.png") no-repeat;}
+.flex-control-paging li a:hover { background: url("../img/nav-pag-bg.png") no-repeat; }
+.flex-control-paging li a.flex-active { background: url("../img/nav-pag-bg.png") no-repeat; cursor: default; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer; height: 310px;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+    .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+    .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}
+/* Slider */
+.services-list {
+    margin: 0;
+    padding: 0;
+}
+.services-list li {
+    float: left;
+    width: 155px;
+    text-align: center;
+    border-right: 1px solid #a3a3a3;
+}
+.services-list li:nth-last-child(1) {
+    border-right: none;
+}
+.avatar img {
+    height: 90px;
+}
+.title {
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+}
+.content {
+    font-family: "Tahoma", sans-serif;
+    font-size: 12px;
+    color: #3a3a3a;
+    padding: 0;
+    margin: 10px;
+}
+
+.contacts {
+    background: #f1f1f0;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.44);
+    margin-top: 30px;
+    padding: 20px;
+}
+.left-content {
+    float: left;
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+}
+.contact-form {
+    margin-top: 25px;
+}
+.contact-form input {
+    height: 30px;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 310px;
+    border: none;
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.22),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.22) inset;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+.contact-form .btn {
+    background: #bdbdbd;
+    width: 100px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.66);
+}
+.contact-form .label {
+    text-align: right;
+    vertical-align: top;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+.right-content {
+    float: left;
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    margin-left: 135px;
+}
+.text-info {
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+}
+.adress:before {
+    position: absolute;
+    content: ' ';
+    left: 0;
+    top: -5px;
+    background: url("../img/icons.png") no-repeat 0 0;
+    width: 25px;
+    height: 25px;
+}
+.phone:before {
+    position: absolute;
+    content: ' ';
+    left: 0;
+    top: -3px;
+    background: url("../img/icons.png") no-repeat -24px 0;
+    width: 26px;
+    height: 25px;
+}
+.email:before {
+    position: absolute;
+    content: ' ';
+    left: 0;
+    top: -3px;
+    background: url("../img/icons.png") no-repeat -52px 0;
+    width: 26px;
+    height: 25px;
+    zoom: 1;
+}
+.information {
+    width: 340px;
+    position: relative;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.44);
+    background: #ffffff;
+    margin-top: 45px;
+    zoom: 1;
+}
+.information:before {
+    content: ' ';
+    position: absolute;
+    background: url("../img/twitter.png") no-repeat 0 0;
+    bottom: 14px;
+    right: 30px;
+    width: 100px;
+    height: 89px;
+    zoom: 1;
+}
+.information span {
+    font-family: "Georgia", sans-serif;
+    font-style: italic;
+    padding: 20px 75px 40px 20px;
+    display: block;
+}
+.social {
+    margin-top: 35px;
+}
+.social ul { margin: 0; padding: 0;}
+.social li { float: left; margin-right: 15px; }
+.social li:nth-last-child(1) { margin-right: 0; }
+.socials {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+.social-fb { background: url("../img/social-icon.png") no-repeat 0 0; }
+.social-lfm { background: url("../img/social-icon.png") no-repeat -24px 0; }
+.social-dart { background: url("../img/social-icon.png") no-repeat -48px 0; }
+.social-tbr { background: url("../img/social-icon.png") no-repeat -72px 0; }
+.social-st { background: url("../img/social-icon.png") no-repeat -96px 0; }
+.social-ff { background: url("../img/social-icon.png") no-repeat -120px 0; }
+.social-del { background: url("../img/social-icon.png") no-repeat -144px 0; }
+.social-fli { background: url("../img/social-icon.png") no-repeat -168px 0; }
+/* Шрифты */
+@font-face {
+    font-family:"TitilliumMaps26L-250wt";
+    src:url("../fonts/TitilliumMaps26L003.eot?") format("eot"),
+    url("../fonts/TitilliumMaps26L003.woff") format("woff"),
+    url("../fonts/TitilliumMaps26L003.ttf") format("truetype"),
+    url("../fonts/TitilliumMaps26L003.svg#TitilliumMaps26L-250wt") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:"TitilliumMaps26L-750wt";
+    src:url("../fonts/TitilliumMaps26L001.eot?") format("eot"),
+    url("../fonts/TitilliumMaps26L001.woff") format("woff"),
+    url("../fonts/TitilliumMaps26L001.ttf") format("truetype"),
+    url("../fonts/TitilliumMaps26L001.svg#TitilliumMaps26L-750wt") format("svg");
+    font-weight:normal;
+    font-style:normal;}
+
+
